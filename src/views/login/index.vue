@@ -64,6 +64,12 @@ export default {
             //   console.log(res.data)
               // 跳转到首页
               // 保存用户信息 用来判断登录的状态
+              // sessionStorage  提供四个api  bom对象 全局对象 作用保存数据
+              // 有有效期 ，关闭浏览器失效 .setitem（key value）value字符串  存储
+              // .getitem(key) 获取
+              // .removeitem（key） 删除
+              // .clear() 清空所有数据 清空所有
+              window.sessionStorage.setItem('hm', JSON.stringify(res.data.data))
               this.$router.push('/')
             })
             .catch(() => {
