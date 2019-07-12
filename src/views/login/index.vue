@@ -12,7 +12,7 @@
             <el-button style="float:right">发送验证码</el-button>
         </el-form-item>
         <el-form-item>
-            <el-checkbox v-model="loginForm.checked">我已同意</el-checkbox>
+            <el-checkbox v-model="loginForm.checked">我已阅读并同意用户协议和隐私条款</el-checkbox>
         </el-form-item>
     <el-form-item>
         <el-button style="width:100%" type="primary" @click="login()">登录</el-button>
